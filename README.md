@@ -11,3 +11,5 @@
 1. Клонируйте репозиторий
 2. Откройте файл index.html в браузере
 3. Или запустите локальный сервер: `python -m http.server 8000` 
+
+https://PavelLaur.github.io
