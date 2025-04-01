@@ -41,75 +41,85 @@
 
     <section id="services" class="services-section">
         <div class="container">
-            <h2>Стоимость услуг</h2>
-            <p class="services-notice">Пожалуйста, обратите внимание: все услуги предоставляются только по предварительной записи</p>
-
+            <h2>Услуги и цены</h2>
+            <p class="service-notice">Все услуги предоставляются по предварительной записи</p>
+            
             <div class="services-grid">
-                <div class="service-item">
+                <div class="service-card pricing">
+                    <i class="fas fa-horse-head"></i>
                     <h3>Прогулки верхом</h3>
                     <div class="price">от 1000₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
+                    <ul class="price-list">
+                        <li>15 минут по территории - 1000₽</li>
+                        <li>30 минут в лесу - 2000₽</li>
+                        <li>60 минут в лесу - 2500₽</li>
+                    </ul>
+                    <a href="#contact" class="book-btn">Записаться</a>
                 </div>
 
-                <div class="service-item">
+                <div class="service-card pricing">
+                    <i class="fas fa-graduation-cap"></i>
                     <h3>Тренировки</h3>
                     <div class="price">от 2300₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
+                    <ul class="price-list">
+                        <li>30 минут манежной езды - 2300₽</li>
+                        <li>60 минут манежной езды - 2800₽</li>
+                        <li>Тренировка + прогулка - 3500₽</li>
+                    </ul>
+                    <a href="#contact" class="book-btn">Записаться</a>
                 </div>
 
-                <div class="service-item">
-                    <h3>Аренда лошади для фото</h3>
-                    <div class="price">от 3500₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
-                </div>
-
-                <div class="service-item">
+                <div class="service-card pricing">
+                    <i class="fas fa-camera"></i>
                     <h3>Фотосессии</h3>
                     <div class="price">от 7500₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
+                    <ul class="price-list">
+                        <li>Экспресс (30 минут) - 7500₽</li>
+                        <li>Стандарт (60 минут) - 10000₽</li>
+                        <li>Фотосессия на озере - 12000₽</li>
+                    </ul>
+                    <a href="#contact" class="book-btn">Записаться</a>
                 </div>
 
-                <div class="service-item">
-                    <h3>Аренда лошади для тренировок</h3>
-                    <div class="price">от 12000₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
-                </div>
-
-                <div class="service-item">
-                    <h3>Экскурсия в конюшню</h3>
-                    <div class="price">от 450₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
-                </div>
-
-                <div class="service-item">
-                    <h3>Подарочный сертификат</h3>
+                <div class="service-card pricing">
+                    <i class="fas fa-gift"></i>
+                    <h3>Подарочные сертификаты</h3>
                     <div class="price">от 1000₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
-                </div>
-
-                <div class="service-item">
-                    <h3>День рождения в конюшне</h3>
-                    <div class="price">от 3000₽</div>
-                    <a href="#price-details" class="details-btn">ПОДРОБНОСТИ ЗДЕСЬ</a>
+                    <ul class="price-list">
+                        <li>Онлайн сертификат</li>
+                        <li>Печатный сертификат</li>
+                        <li>Любая сумма от 1000₽</li>
+                    </ul>
+                    <a href="#contact" class="book-btn">Заказать</a>
                 </div>
             </div>
 
-            <div id="price-details" class="price-details">
-                <h3>Общий прайс-лист на услуги конного клуба</h3>
-                <table class="price-table">
-                    <tr class="category">
-                        <td colspan="2">1. ТРЕНИРОВКИ</td>
-                    </tr>
-                    <tr>
-                        <td>Тренировка разовая индивидуальная манежная езда, 30 минут</td>
-                        <td>2300₽</td>
-                    </tr>
-                    <tr>
-                        <td>Тренировка разовая индивидуальная манежная езда, 60 минут</td>
-                        <td>2800₽</td>
-                    </tr>
-                    <!-- Добавьте остальные категории и цены аналогично -->
-                </table>
+            <div class="additional-services">
+                <h3>Дополнительные услуги</h3>
+                <div class="services-table-wrapper">
+                    <table class="services-table">
+                        <tr>
+                            <th>Услуга</th>
+                            <th>Стоимость</th>
+                            <th>Длительность</th>
+                        </tr>
+                        <tr>
+                            <td>Экскурсия в конюшню</td>
+                            <td>450₽</td>
+                            <td>60 минут</td>
+                        </tr>
+                        <tr>
+                            <td>День рождения в конюшне</td>
+                            <td>от 3000₽</td>
+                            <td>2 часа</td>
+                        </tr>
+                        <tr>
+                            <td>Аренда лошади для фото</td>
+                            <td>3500₽</td>
+                            <td>60 минут</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </section>

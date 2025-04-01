@@ -234,7 +234,100 @@ footer {
     text-align: center;
 }
 
-/* Responsive Design */
+/* Services Section Styles */
+.service-notice {
+    text-align: center;
+    color: var(--text-color);
+    font-style: italic;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: var(--light-bg);
+    border-radius: 5px;
+}
+
+.service-card.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 400px;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 1rem 0;
+}
+
+.price-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.price-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+    color: var(--text-color);
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+}
+
+.book-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.additional-services {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.additional-services h3 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+}
+
+.services-table-wrapper {
+    overflow-x: auto;
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.services-table th,
+.services-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.services-table th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.services-table tr:hover {
+    background-color: var(--light-bg);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -246,5 +339,17 @@ footer {
     
     .hero-content h2 {
         font-size: 2rem;
+    }
+    
+    .service-card.pricing {
+        min-height: auto;
+    }
+    
+    .services-table {
+        font-size: 0.9rem;
+    }
+    
+    .price {
+        font-size: 1.5rem;
     }
 }
