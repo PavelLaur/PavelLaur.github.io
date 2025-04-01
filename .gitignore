@@ -1,10 +1,4 @@
-<<<<<<< HEAD
 .DS_Store
-node_modules/
-.env
-=======
-.DS_Store
-node_modules/
-.env
->>>>>>> 38a481c (first commit)
-*.log 
+ node_modules/
+ .env
+ *.log 

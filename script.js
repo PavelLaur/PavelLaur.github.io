@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Плавная прокрутка для навигационных ссылок
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -20,19 +19,14 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Получаем данные формы
-            const formData = new FormData(this);
+            const formData = new FormData(contactForm);
             const formObject = {};
             formData.forEach((value, key) => {
                 formObject[key] = value;
             });
             
-            // Здесь можно добавить отправку данных на сервер
-            console.log('Отправка формы:', formObject);
-            
-            // Показываем сообщение об успехе
             alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
-            this.reset();
+            contactForm.reset();
         });
     }
 
