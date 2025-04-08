@@ -248,6 +248,15 @@ footer {
 }
 
 /* Services Section Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .service-notice {
     text-align: center;
     color: var(--text-color);
