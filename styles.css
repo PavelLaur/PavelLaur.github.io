@@ -349,29 +349,62 @@ footer {
     background-color: var(--light-bg);
 }
 
-/* Responsive adjustments */
+/* ... existing code ... */
+
+/* Responsive Design */
 @media (max-width: 768px) {
+    /* Навигация */
     .nav-links {
         display: none;
     }
     
+    /* Сетки */
+    .services-grid {
+        grid-template-columns: 1fr !important; /* Принудительно один столбец */
+        gap: 1.5rem;
+    }
+    
+    .rehabilitation-list {
+        grid-template-columns: 1fr !important; /* Принудительно один столбец */
+    }
+    
+    /* Контакты */
     .contact-info {
         grid-template-columns: 1fr;
     }
     
+    /* Заголовки */
     .hero-content h2 {
         font-size: 2rem;
     }
-    
-    .service-card.pricing {
-        min-height: auto;
+
+    /* Карточки услуг */
+    .service-card {
+        margin: 0 1rem;
     }
-    
-    .services-table {
-        font-size: 0.9rem;
+
+    /* Отступы секций */
+    section {
+        padding: 3rem 0;
     }
-    
-    .price {
-        font-size: 1.5rem;
+
+    /* Контейнер */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Дополнительные настройки для очень маленьких экранов */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
