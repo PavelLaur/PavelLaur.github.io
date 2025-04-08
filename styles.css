@@ -151,32 +151,19 @@ h2 {
 /* Rehabilitation List */
 .rehabilitation-list {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
 }
 
 .rehabilitation-list li {
-    background: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.sub-info {
-    margin-top: 1rem;
-    padding-left: 1.5rem;
-    border-left: 3px solid #3498db;
-    color: #666;
-}
-
-.location-description {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: 5px;
     text-align: center;
-    margin: 1rem 0;
-    line-height: 1.5;
-    color: #666;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Contact Section */
@@ -248,15 +235,6 @@ footer {
 }
 
 /* Services Section Styles */
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .service-notice {
     text-align: center;
     color: var(--text-color);
@@ -349,29 +327,60 @@ footer {
     background-color: var(--light-bg);
 }
 
-/* Responsive adjustments */
+/* Responsive Design */
 @media (max-width: 768px) {
+    /* Навигация */
     .nav-links {
         display: none;
     }
     
+    /* Сетки */
+    .services-grid {
+        grid-template-columns: 1fr !important; /* Принудительно один столбец */
+        gap: 1.5rem;
+    }
+    
+    .rehabilitation-list {
+        grid-template-columns: 1fr !important; /* Принудительно один столбец */
+    }
+    
+    /* Контакты */
     .contact-info {
         grid-template-columns: 1fr;
     }
     
+    /* Заголовки */
     .hero-content h2 {
         font-size: 2rem;
     }
-    
-    .service-card.pricing {
-        min-height: auto;
+
+    /* Карточки услуг */
+    .service-card {
+        margin: 0 1rem;
     }
-    
-    .services-table {
-        font-size: 0.9rem;
+
+    /* Отступы секций */
+    section {
+        padding: 3rem 0;
     }
-    
-    .price {
-        font-size: 1.5rem;
+
+    /* Контейнер */
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Дополнительные настройки для очень маленьких экранов */
+@media (max-width: 480px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
     }
 }
