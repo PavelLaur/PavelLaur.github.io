@@ -151,19 +151,32 @@ h2 {
 /* Rehabilitation List */
 .rehabilitation-list {
     list-style: none;
-    max-width: 800px;
-    margin: 0 auto;
+    padding: 0;
+    margin: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .rehabilitation-list li {
-    padding: 1rem;
-    background: var(--white);
-    border-radius: 5px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sub-info {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid #3498db;
+    color: #666;
+}
+
+.location-description {
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    line-height: 1.5;
+    color: #666;
 }
 
 /* Contact Section */

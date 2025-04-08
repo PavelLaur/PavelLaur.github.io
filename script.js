@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Обработка формы
+    // Обработка формы  
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
