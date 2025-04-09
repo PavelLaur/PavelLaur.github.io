@@ -327,12 +327,6 @@ footer {
     background-color: var(--light-bg);
 }
 
-<<<<<<< HEAD
-=======
-/* ... existing code ... */
-
->>>>>>> тест-1
-/* Responsive Design */
 @media (max-width: 768px) {
     /* Навигация */
     .nav-links {
@@ -368,10 +362,6 @@ footer {
     section {
         padding: 3rem 0;
     }
-<<<<<<< HEAD
-
-=======
->>>>>>> тест-1
     /* Контейнер */
     .container {
         padding: 0 15px;
