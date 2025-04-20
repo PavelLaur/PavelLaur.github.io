@@ -417,12 +417,17 @@ footer {
     font-weight: bold;
     color: var(--primary-color);
     margin: 1rem 0;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .price-list {
     list-style: none;
     margin: 0;
     padding: 0;
+    flex-grow: 1;
 }
 
 .price-list li {
