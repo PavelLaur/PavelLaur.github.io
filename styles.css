@@ -332,11 +332,28 @@ h2::after {
     display: flex;
     align-items: center;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .contact-details i {
     color: var(--primary-color);
     font-size: 1.2rem;
+}
+
+.contact-details a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-details a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.contact-note {
+    font-size: 0.9rem;
+    color: #666;
 }
 
 .contact-form {
@@ -416,11 +433,8 @@ footer {
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--primary-color);
-    margin: 1rem 0;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 1rem 0 0.5rem 0;
+    line-height: 1.3;
 }
 
 .price-list {
@@ -694,6 +708,72 @@ footer {
     margin-bottom: 0;
     font-weight: 600;
     color: #2c5530;
+}
+
+/* Map section */
+.map-section .container {
+    align-items: stretch;
+}
+
+.map-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.map-wrapper {
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.map-details {
+    background: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    border: 1px solid rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.map-details h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.map-link {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .map-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .map-wrapper {
+        height: 360px;
+    }
 }
 
 @media (max-width: 768px) {

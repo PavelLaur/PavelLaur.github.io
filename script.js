@@ -27,12 +27,19 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             
             const formData = new FormData(contactForm);
-            const formObject = {};
-            formData.forEach((value, key) => {
-                formObject[key] = value;
-            });
-            
-            alert('Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.');
+            const name = formData.get('name') || '';
+            const phone = formData.get('phone') || '';
+            const message = formData.get('message') || '';
+
+            const subject = encodeURIComponent('Запрос с сайта Херувим');
+            const body = encodeURIComponent(
+                `Имя: ${name}\nТелефон: ${phone}\nСообщение:\n${message}`
+            );
+
+            // Отправляем через почтовый клиент
+            window.location.href = `mailto:horses_ryazan@mail.ru?subject=${subject}&body=${body}`;
+
+            alert('Спасибо! Черновик письма открыт в почтовом клиенте.');
             contactForm.reset();
         });
     }
