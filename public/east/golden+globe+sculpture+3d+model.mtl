@@ -1,0 +1,8 @@
+newmtl tripo_material_3a6558cb_475f_462a_baed_67c75d2d0c77
+Kd 1.000000000 1.000000000 1.000000000
+d 1.000000000
+illum 2
+map_Kd golden+globe+sculpture+3d+model_basecolor.jpg
+map_Bump -bm 1.000000 golden+globe+sculpture+3d+model_normal.jpg
+map_Pr golden+globe+sculpture+3d+model_rm.jpg
+map_Pm golden+globe+sculpture+3d+model_rm.jpg
